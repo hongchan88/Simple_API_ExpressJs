@@ -1,11 +1,17 @@
 import * as ordersRepository from "../data/orders.js";
+import { validationResult } from "express-validator";
 
 export async function createOrders(req, res) {
-  const { title, type, customer } = req.body;
-  const order = await ordersRepository.create(title, type, customer);
-  console.log(order);
+  const errors = validationResult(req);
 
-  res.status(201).json(order);
+  if (!errors.isEmpty()) {
+    res.status(400).json({ message: errors.array() });
+  } else {
+    const { title, type, customer } = req.body;
+    const order = await ordersRepository.create(title, type, customer);
+
+    res.status(201).json(order);
+  }
 }
 
 export async function getAllOrders(req, res) {

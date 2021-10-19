@@ -3,6 +3,7 @@ import OrderRouter from "./router/orders.js";
 
 const app = express();
 
+// middleware to change body to json
 app.use(express.json());
 
 app.use("/orders", OrderRouter);
@@ -17,4 +18,4 @@ app.use((error, req, res, next) => {
   console.error(error);
   res.sendStatus(500);
 });
-app.listen(8080);
+app.listen(8080, () => console.log(`🚀 Server ready at http://localhost:8080`));

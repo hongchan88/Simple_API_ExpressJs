@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/hongchan88/teleresult_phase2#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
