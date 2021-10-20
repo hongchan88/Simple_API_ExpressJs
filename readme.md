@@ -84,6 +84,7 @@ GET `http://localhost:8080//orders/{type}/{date}`
 
 - Testing script was built on `app.test.js`.
 - All GET/POST endpoints were tested.
+- turn server on `npm start` and `npm test` to run the jest test
 
 ## **List of assumptions for the endpoints**
 
@@ -91,7 +92,6 @@ GET `http://localhost:8080//orders/{type}/{date}`
 
 - Order ID is created using `Date.now().toString()` in milliseconds
 - Latest order will be stored in last of the array.
-- turn server on `npm start` and `npm test` to run the jest test
 
 #### GET http://localhost:8080/orders (extra endpoint)
 
