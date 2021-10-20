@@ -5,8 +5,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app"
+    "start": "nodemon server",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,15 @@
   "homepage": "https://github.com/hongchan88/teleresult_phase2#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-validator": "^6.13.0"
+    "express-validator": "^6.13.0",
+    "jest": "^27.3.1",
+    "supertest": "^6.1.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
+  },
+  "jest": {
+    "transform": {},
+    "testEnvironment": "jest-environment-node"
   }
 }

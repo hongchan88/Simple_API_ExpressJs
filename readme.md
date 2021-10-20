@@ -53,7 +53,8 @@ GET `http://localhost:8080//orders/{type}/{date}`
 
 ### Why used NodeJs in this project?
 
-- JavaScript is everywhere!! 👍 Choosing the same language on front-end and also on backend can improve developer productivity 🔧
+- JavaScript is everywhere!! 👍
+- Choosing the same language on front-end and also on backend can improve developer productivity 🔧
 - Easy , simple yet powerfull and flexible. ✨
 - Big corporates use Node.js such as in AWS , Netflix , UBER etc 👌
 - Node.js has strong community which provides numerous libraries and reusable templates are available. 🙆‍♂️
@@ -71,11 +72,18 @@ GET `http://localhost:8080//orders/{type}/{date}`
 
 - Express.js
 - express-validator
+- jest
+- supertest
 
 ### Why used Express.js?
 
 - Express.js is the most popular node application framework . This means that it has been tested by many developers and most likely common issues have been resolved.
 - not all libraries are good just because many developers are using it.But I still chose to use Express.js because Express.js is powerful , flexible and most importantly it is very light weighted library which is really easy to learn if you know javascript.
+
+### Testing using jest
+
+- Testing script was built on `app.test.js`.
+- All GET/POST endpoints were tested.
 
 ## **List of assumptions for the endpoints**
 
@@ -83,6 +91,7 @@ GET `http://localhost:8080//orders/{type}/{date}`
 
 - Order ID is created using `Date.now().toString()` in milliseconds
 - Latest order will be stored in last of the array.
+- turn server on `npm start` and `npm test` to run the jest test
 
 #### GET http://localhost:8080/orders (extra endpoint)
 
@@ -103,6 +112,7 @@ GET `http://localhost:8080//orders/{type}/{date}`
 - Spend a few hours to learn Express.js framework to design and implement a simple service.
 - After understand the concept of Express.js , developing logic part was fairly straight forward . 4-5hours to build the logic part.
 - 3-4 hours to clean the code and researching for a better refactoring option to build simple code to read.
+- 1-2 hours to build jest testing script to check if all endpoints working as expected.
 
 ## **What else to add more in the future?**
 
