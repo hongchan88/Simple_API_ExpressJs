@@ -1,4 +1,4 @@
-# Coding test phase 2
+# Simple API using Express.js
 
 ## **Setup / installation instructions (on MAC)**
 
